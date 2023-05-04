@@ -254,7 +254,7 @@ h3 {
   cursor: pointer;
 }
 
-.warstwa:hover {
+.warstwa:hover .warstwa:active {
   background: #247979da;
   border-radius: 10px;
 }
@@ -285,13 +285,20 @@ h3 {
   transition: 0.5s;
 }
 
-.warstwa:hover h3 {
+.warstwa:hover .warstwa:active h3 {
   bottom: 80%;
 }
 
-.warstwa:hover p {
+.warstwa:hover .warstwa:active p {
   opacity: 1;
   bottom: 30%;
+}
+
+  
+  .warstwa:hover p {
+    opacity: 1;
+    bottom: 30%;
+  }
 }
 
 .btn--economizzer {
