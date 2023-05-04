@@ -254,7 +254,7 @@ h3 {
   cursor: pointer;
 }
 
-.warstwa:hover .warstwa:active {
+.warstwa:hover  {
   background: #247979da;
   border-radius: 10px;
 }
@@ -285,15 +285,26 @@ h3 {
   transition: 0.5s;
 }
 
-.warstwa:hover .warstwa:active h3 {
+.warstwa:hover h3 {
   bottom: 80%;
 }
 
-.warstwa:hover .warstwa:active p {
+.warstwa:hover p {
   opacity: 1;
   bottom: 30%;
 }
 
+/* TOUCHSCREEN */
+@media(hover: hover) and (pointer: fine) {
+  
+  .warstwa:hover  {
+    background: #247979da;
+    border-radius: 10px;
+  }
+
+  .warstwa:hover h3 {
+    bottom: 80%;
+  }
   
   .warstwa:hover p {
     opacity: 1;
