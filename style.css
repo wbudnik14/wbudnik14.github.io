@@ -254,7 +254,7 @@ h3 {
   cursor: pointer;
 }
 
-.warstwa:hover  {
+.warstwa:hover .warstwa:active {
   background: #247979da;
   border-radius: 10px;
 }
@@ -285,32 +285,15 @@ h3 {
   transition: 0.5s;
 }
 
-.warstwa:hover h3 {
+.warstwa:hover .warstwa:active h3 {
   bottom: 80%;
 }
 
-.warstwa:hover p {
+.warstwa:hover .warstwa:active p {
   opacity: 1;
   bottom: 30%;
 }
 
-/* TOUCHSCREEN */
-@media(hover: hover) and (pointer: fine) {
-
-  .warstwa:hover  {
-    background: #247979da;
-    border-radius: 10px;
-  }
-
-  .warstwa:hover h3 {
-    bottom: 80%;
-  }
-  
-  .warstwa:hover p {
-    opacity: 1;
-    bottom: 30%;
-  }
-}
 
 .btn--economizzer {
   display: inline-block;
@@ -322,7 +305,7 @@ h3 {
   background: rgba(255, 255, 255, 0.314);
   position: relative;
   cursor: pointer;
-  box-shadow: 0 0px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn--economizzer:hover {
@@ -353,7 +336,7 @@ h3 {
   background: rgba(255, 255, 255, 0.314);
   position: relative;
   cursor: pointer;
-  box-shadow: 0 0px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn--contact:hover {
