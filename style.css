@@ -240,7 +240,7 @@ h3 {
   flex-basis: 32%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .warstwa {
@@ -289,11 +289,10 @@ h3 {
   bottom: 80%;
 }
 
-.warstwa:hover  p {
+.warstwa:hover p {
   opacity: 1;
   bottom: 30%;
 }
-
 
 .btn--economizzer {
   display: inline-block;
@@ -315,32 +314,24 @@ h3 {
 }
 
 .offer {
-  width: 90%;
-  margin: auto;
+  margin: 80px auto;
+  width: 85%;
+  background-image: linear-gradient(#06323aa1, #06323aa1), url(offer.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
   text-align: center;
-  padding-top: 50px;
-  
+  padding: 100px 0;
 }
 
-.offer p{
-  margin-bottom: 30px;
+.offer h1 {
+  color: #dee2e6;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
-.btn--contact {
-  display: inline-block;
-  text-decoration: none;
-  color: #495057;
-  border: 2px solid #495057;
-  font-size: 16px;
-  padding: 12px 34px;
-  background: rgba(255, 255, 255, 0.314);
-  position: relative;
-  cursor: pointer;
-  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+@media screen and (max-width: 1000px) {
+  .offer h1 {
+    font-size: 24px;
+  }
 }
-
-.btn--contact:hover {
-  background: #3ecfab;
-  border: 2px solid #3ecfab;
-  transition: 0.7s;
-
