@@ -294,21 +294,6 @@ h3 {
   bottom: 30%;
 }
 
-@media screen and (max-width: 1000px) {
-  .warstwa p {
-    opacity: 1;
-    bottom: 20%;
-  }
-  .warstwa h3 {
-    bottom: 85%;
-  }
-
-  .warstwa {
-    background: #247979da;
-    border-radius: 10px;
-  }
-}
-
 .btn--economizzer {
   display: inline-block;
   text-decoration: none;
