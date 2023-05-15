@@ -140,9 +140,13 @@ nav .mobile-btn {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-left: -100%;
     transition: all 0.5s ease;
+  }
+
+  .nav-links ul li a {
+    color: #ced4da;
   }
 
   .nav-links.mobile-menu {
@@ -152,13 +156,15 @@ nav .mobile-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
+
   nav .mobile-btn {
     display: block;
   }
 
   nav .nav-links ul li {
-    margin: 15px 0;
+    margin: 10px 0;
     font-size: 1.2em;
   }
 
@@ -408,5 +414,222 @@ footer ul li a:hover {
 
   .offer {
     margin-bottom: 80px;
+  }
+}
+
+/* ----services---- */
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(#06323aa1, #06323aa1), url(services.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #dee2e6;
+}
+
+.sub-header h1 {
+  margin-top: 80px;
+}
+
+.service {
+  width: 85%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.service-row {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.service-col img {
+  width: 100%;
+}
+
+.service-col h1 {
+  padding-top: 0;
+}
+
+.service-col p {
+  padding: 15px 0 25px;
+}
+
+.service-col ul {
+  margin-left: 25px;
+  list-style: inside;
+  color: #495057;
+}
+
+@media screen and (max-width: 1000px) {
+  .service-row {
+    flex-direction: column;
+  }
+  .sub-header h1 {
+    margin-top: 140px;
+  }
+
+  .service-row .flex {
+    order: 2;
+  }
+}
+
+/* ----PRODUCT---- */
+
+.prod-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(#06323aa1, #06323aa1), url(products.jpg);
+  background-position: 50% 55%;
+  background-size: cover;
+  text-align: center;
+  color: #dee2e6;
+}
+
+.prod-header h1 {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .prod-header h1 {
+    margin-top: 140px;
+  }
+}
+
+.product-first {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.product-first h1 {
+  padding: 80px 0 20px 10px;
+}
+
+.child-two {
+  align-self: center;
+  padding: 70px 0 0 0;
+}
+
+.btn--product {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .product-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-first h1 {
+    padding: 80px 0 20px 10px;
+  }
+
+  .child-two {
+    align-self: center;
+    padding: 0px 0 0 0;
+  }
+}
+
+.vcb {
+  width: 325px;
+}
+
+.ams {
+  display: inline-block;
+  text-decoration: none;
+  color: #495057;
+  border: 2px solid #495057;
+  font-size: 16px;
+  margin-right: 20px;
+  padding: 20px 100px;
+  background: rgba(255, 255, 255, 0.314);
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ams:hover {
+  background: #3ecfab;
+  border: 2px solid #3ecfab;
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 1000px) {
+  .ams {
+    padding: 20px 85px;
+  }
+}
+
+/* ----completed projects---- */
+.compl-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(#06323aa1, #06323aa1),
+    url(completed\ projects.jpg);
+  background-position: 50% 70%;
+  background-size: cover;
+  text-align: center;
+  color: #dee2e6;
+}
+
+.compl-header h1 {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .compl-header h1 {
+    margin-top: 140px;
+  }
+}
+
+.compl-proj {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.compl-proj h2 {
+  padding-left: 10px;
+}
+
+.compl--btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #495057;
+  border: 2px solid #495057;
+  font-size: 16px;
+  margin-right: 20px;
+  padding: 12px 34px;
+  background: rgba(255, 255, 255, 0.314);
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+}
+
+.compl--btn:hover {
+  background: #3ecfab;
+  border: 2px solid #3ecfab;
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 1000px) {
+  .compl-proj {
+    flex-direction: column;
   }
 }
