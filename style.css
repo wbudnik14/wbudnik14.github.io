@@ -639,6 +639,9 @@ footer ul li a:hover {
   .compl-proj {
     flex-direction: column;
   }
+  .dok {
+    width: 100%;
+  }
 }
 
 /* ----cooperation---- */
