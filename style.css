@@ -422,7 +422,7 @@ footer ul li a:hover {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(#06323aa1, #06323aa1), url(services.jpg);
-  background-position: center;
+  background-position: 50% 62%;
   background-size: cover;
   text-align: center;
   color: #dee2e6;
@@ -488,7 +488,7 @@ footer ul li a:hover {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(#06323aa1, #06323aa1), url(products.jpg);
-  background-position: 50% 55%;
+  background-position: 50% 65%;
   background-size: cover;
   text-align: center;
   color: #dee2e6;
@@ -603,7 +603,6 @@ footer ul li a:hover {
 .compl-proj {
   width: 65%;
   display: flex;
-  justify-content: space-between;
   gap: 20px;
   align-items: flex-start;
   margin: auto;
@@ -699,6 +698,34 @@ footer ul li a:hover {
   }
 }
 
+/* ----terms---- */
+
+.terms {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.terms h5 {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.privacy-policy {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.privacy-policy h5 {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.points {
+  margin-left: 40px;
+}
+
 /* ----contact---- */
 
 .contact-header {
@@ -722,13 +749,41 @@ footer ul li a:hover {
 }
 
 .mapa {
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding: 40px 0;
 }
 
 .mapa iframe {
   width: 100%;
+}
+
+.grid {
+  text-align: center;
+  margin: auto;
+}
+
+.contact-grid {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.contact-grid-3 {
+  grid-column: 1/-1;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flex-right {
+  width: 80%;
 }
 
 .contact-icons h1 {
@@ -745,12 +800,10 @@ footer ul li a:hover {
 .contact-icons {
   width: 80%;
   margin: auto;
-  margin-top: 80px;
 }
 
 .cont {
   display: flex;
-  flex-basis: 48%;
   margin-bottom: 30px;
   justify-content: center;
 }
