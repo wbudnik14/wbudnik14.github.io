@@ -10,54 +10,68 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
     <title>Emi-Tech</title>
   </head>
   <body>
-    <figure class="preloader" id="preloader">
+    <!-- <figure class="preloader" id="preloader">
       <div class="circles-group">
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
       </div>
-    </figure>
+    </figure> -->
     <div class="background"></div>
     <header class="header">
-      <nav class="navbar" id="temat1">
-        <a href="index.html">
-          <img class="LOGO" src="logo1.png" alt="Emi-Tech LOGO" />
-        </a>
-        <div class="nav-links">
-          <ul class="nav-list">
+      <div class="navbar">
+        <img class="LOGO" src="logo1.png" alt="Emi-Tech LOGO"/>
+        <!-- <input type="checkbox" id="menu-bar"> -->
+        <a class="dropdowntoggle" data-toggle="dropdown" href="#">Menu</a>
+        <nav class="nav" id="temat1">
+          <ul class="nav__links">
             <li>
-              <a href="index.html">Strona główna</a>
+              <a class="example " href="index.html">Strona główna</a>
             </li>
             <li>
-              <a onclick="scrollToElement('temat2')">O nas</a>
+              <a class="example " onclick="scrollToElement('temat2')">O nas</a>
+            </li>
+            <li class="drop_btn">  
+              <!-- <a onclick="scrollToElement('temat3')">Produkty <ion-icon class="strzalka"  name="chevron-down-outline"></ion-icon></a> -->
+              <a class="products">Produkty <ion-icon class="strzalka"  name="chevron-down-outline"></ion-icon></a>
+                <ul class="dropdown">
+                    <li><a class="example href="#">Komponenty Elektroniczne</a></li>
+                    <li><a class="example href="#">Przewody i kable</a></li>
+                    <li><a class="example href="#">Osprzęt elektryczny</a></li>
+                    <li><a class="example href="#">Automatyka</a></li>
+                    <li><a class="example href="#">Oświetlenie</a></li>
+                    <li><a class="example href="#">Narzędzia elektryczne</a></li>
+                </ul>
             </li>
             <li>
-              <a onclick="scrollToElement('temat3')">Produkty</a>
+              <a class="example " onclick="scrollToElement('temat4')">Współpraca</a>
             </li>
             <li>
-              <a onclick="scrollToElement('temat4')">Współpraca</a>
+              <a class="example " onclick="scrollToElement('temat5')">Kontakt</a>
             </li>
             <li>
-              <a onclick="scrollToElement('temat5')">Kontakt</a>
+              <a class="example " href="index.html">PL</a>
             </li>
             <li>
-              <a href="index.html">PL</a>
+              <a class="example " href="index.html">EN</a>
             </li>
-            <li>
-              <a href="index.html">EN</a>
-            </li>
+            
+          </button>
           </ul>
-        </div>
-        <button class="hamburger">
-          <div class="bar"></div>
-        </button>
-      </nav>
+          
+              <button class="hamburger">
+                <div class="bar"></div>
+            
+          
+        </nav>
+      </div>
       <div class="text-box">
         <h1>Techniczne zaopatrzenie statków</h1>
         <h2>
@@ -112,50 +126,88 @@
           </section>
 
         <section class="grid">
+         
           <div class="col-1">
-            <img class="elektronika" src="produkty/circuitry.svg">
-            <h3>Komponenty Elektroniczne</h3>
-            <p>
-              Tranzystory, diody, rezystory i wiele innych, dostępnych w
-              różnych opakowaniach i parametrach.
-            </p>
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/components.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Komponenty Elektroniczne</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Tranzystory, diody, rezystory i wiele innych, dostępnych w
+                różnych opakowaniach i parametrach.
+              </p>
+            </a>
           </div>
           <div class="col-1">
-            <img class="elektronika" src="produkty/wires.png">
-            <h3>Przewody i Kable</h3>
-            <p>
-              Wysokiej jakości przewody elektryczne, kable zasilające,
-              komunikacyjne oraz wiele innych.
-            </p>
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/wires.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Przewody i Kable</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Wysokiej jakości przewody elektryczne, kable zasilające,
+                komunikacyjne oraz wiele innych.
+              </p>
+            </a>
+          </div>
+        
+          <div class="col-1">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/electric-panel.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Osprzęt Elektryczny</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Gniazdka, włączniki, rozdzielnice i inne elementy niezbędne do
+                instalacji elektrycznych.
+              </p>
+            </a>
           </div>
           <div class="col-1">
-            <img class="elektronika" src="produkty/electric-panel.png">
-            <h3>Osprzęt Elektryczny</h3>
-            <p>
-              Gniazdka, włączniki, rozdzielnice i inne elementy niezbędne do
-              instalacji elektrycznych.
-            </p>
-          </div>
-          <div class="col-1">
+            <a class="produkt-anchor" href="elektronika.html">
               <img class="elektronika" src="produkty/plc.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
               <h3>Automatyka:</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
               <p>
                 Sterowniki PLC, sensory, siłowniki, oraz wszystko, co potrzebne do automatyzacji procesów.
               </p>
-          </div>
+            </a>
+            </div>
           <div class="col-1">
-            <img class="elektronika" src="produkty/idea.png">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/idea.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
               <h3>Oświetlenie</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
               <p>
                 Energooszczędne źródła światła, lampy przemysłowe, systemy oświetleniowe.
               </p>
+            </a>
           </div>
           <div class="col-1">
-            <img class="elektronika" src="produkty/electric-gauge.png">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/electric-gauge.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
               <h3>Narzędzia Elektryczne</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
               <p>
                 Zaciskarki, szczypce, wkrętarki i wiele innych narzędzi do pracy w elektryce.
               </p>
+            </a>
           </div>
         </section>
       </section>
@@ -284,5 +336,7 @@
   </div>
 </footer>
 <script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
