@@ -401,11 +401,25 @@ h3 {
   margin-right: 10px; /* Dodaje odstęp między logotypami */
 }
 
-/* Pokaż strzałki przewijania tylko w wersji mobilnej */
 @media screen and (max-width: 1000px) {
   .coop-companies-slider {
     display: inline-flex;
   }
+}
+
+.listwa {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  justify-content: center;
+  margin: auto;
+}
+
+.divider-line-1 {
+  flex: 1;
+  height: 2px;
+  background: #495057;
+  opacity: 0.4;
 }
 
 /* -------KONTAKT------ */
