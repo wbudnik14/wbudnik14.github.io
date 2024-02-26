@@ -500,6 +500,12 @@ h3 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .col-2 {
+    width: 300px;
+  }
+}
+
 /* ------STOPKA------ */
 footer {
   padding-top: 10px;
