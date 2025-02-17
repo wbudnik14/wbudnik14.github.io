@@ -1,13 +1,13 @@
 //Preloader
-// const preloader = document.querySelector("#preloader");
+const preloader = document.querySelector("#preloader");
 
-// preloader.classList.add("show-preloader");
+preloader.classList.add("show-preloader");
 
-// window.addEventListener("load", function () {
-//   setTimeout(function () {
-//     preloader.classList.remove("show-preloader");
-//   }, 2000);
-// });
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    preloader.classList.remove("show-preloader");
+  }, 2000);
+});
 
 //dropdown hide
 // show/hide the menu when examples is clicked
