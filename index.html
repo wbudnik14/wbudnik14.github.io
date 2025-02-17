@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Emi-Tech</title>
+  </head>
+  <body>
+    <figure class="preloader" id="preloader">
+      <div class="circles-group">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </figure>
+    <div class="background"></div>
+    <header class="header">
+      <div class="navbar">
+        <img class="LOGO" src="logo1.png" alt="Emi-Tech LOGO"/>
+        <input type="checkbox" id="menu-bar">
+        <a class="dropdowntoggle" data-toggle="dropdown" href="#">Menu</a>
+        <nav class="nav" id="temat1">
+          <ul class="nav__links">
+            <li>
+              <a class="example " href="index.html">Strona główna</a>
+            </li> 
+            <li class="drop_btn">  
+              <!-- <a onclick="scrollToElement('temat3')">Produkty <ion-icon class="strzalka"  name="chevron-down-outline"></ion-icon></a> -->
+              <a class="products">Produkty <ion-icon class="strzalka"  name="chevron-down-outline"></ion-icon></a>
+                <ul class="dropdown">
+                    <li><a class="example" href="#">Komponenty Elektroniczne</a></li>
+                    <li><a class="example" href="#">Przewody i kable</a></li>
+                    <li><a class="example" href="#">Osprzęt elektryczny</a></li>
+                    <li><a class="example" href="#">Automatyka</a></li>
+                    <li><a class="example" href="#">Oświetlenie</a></li>
+                    <li><a class="example" href="#">Narzędzia elektryczne</a></li>
+                </ul>
+            </li>
+            <li>
+              <a class="example " onclick="scrollToElement('temat2')">O nas</a>
+            </li>
+           
+            <li>
+              <a class="example " onclick="scrollToElement('temat4')">Współpraca</a>
+            </li>
+            <li>
+              <a class="example " onclick="scrollToElement('temat5')">Kontakt</a>
+            </li>
+            <li>
+              <a class="example " href="index.html">PL</a>
+            </li>
+            <li>
+              <a class="example " href="index.html">EN</a>
+            </li>
+            
+          </button>
+          </ul>
+          
+              <button class="hamburger">
+                <div class="bar"></div>
+                </button>
+                
+    </div>
+          
+        </nav>
+      </div>
+     
+
+      <div class="głowa">
+        <div class="slideshow-container" id="slideshow">
+          <div class="slide">
+            <img src="background1.jpg" alt="Zdjęcie 1">
+            <div class="text-box">
+              <h1>Techniczne zaopatrzenie statków</h1>
+              <h2>Artykuły elektryczne i elektroniczne w branży morskiej oraz dla przemysłu budowlanego</h2>
+              <a onclick="scrollElement()" id="btn--header">Kontakt</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="background2.jpg" alt="Zdjęcie 2">
+            <div class="text-box">
+              <h1>Nowoczesne technologie dla Twojego biznesu</h1>
+              <h2>Innowacyjne produkty elektryczne i automatyka przemysłowa dostosowane do branży</h2>
+              <a onclick="scrollElement()" id="btn--header">Kontakt</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="background3.jpg" alt="Zdjęcie 3">
+            <div class="text-box">
+              <h1>Elektryka i automatyka – solidne podstawy przemysłu</h1>
+              <h2>Nowoczesne rozwiązania dla statków, budownictwa i przemysłu ciężkiego</h2>
+              <a onclick="scrollElement()" id="btn--header">Kontakt</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="background4.jpg" alt="Zdjęcie 4">
+            <div class="text-box">
+              <h1>Automatyka dla przemysłu i transportu morskiego</h1>
+              <h2>Artykuły elektryczne, które zwiększają efektywność i bezpieczeństwo</h2>
+              <a onclick="scrollElement()" id="btn--header">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    </header>
+   
+
+    <article class="opisowka">
+      <section  id="temat3">
+        <div class="products-header">
+          <img class="bolt" src="img/icons8-bolt.png" />
+          <h1>PRODUKTY</h1>
+          
+        </div>
+        </section>
+
+        <section class="produkty">
+          <section>
+            <p class="opis">
+              Nasz sklep to miejsce, w którym znajdziesz wszystko, czego
+              potrzebujesz do projektowania, budowy i utrzymania systemów
+              elektrycznych i automatyki. W naszym asortymencie znajdziesz:
+            </p>
+          </section>
+        </section>
+
+        <section class="grid abba">
+         
+          <div class="col-1">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/components.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Komponenty Elektroniczne</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Tranzystory, diody, rezystory i wiele innych, dostępnych w
+                różnych opakowaniach i parametrach.
+              </p>
+            </a>
+          </div>
+          <div class="col-1">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/wires.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Przewody i Kable</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Wysokiej jakości przewody elektryczne, kable zasilające,
+                komunikacyjne oraz wiele innych.
+              </p>
+            </a>
+          </div>
+        
+          <div class="col-1">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/electric-panel.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Osprzęt Elektryczny</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Gniazdka, włączniki, rozdzielnice i inne elementy niezbędne do
+                instalacji elektrycznych.
+              </p>
+            </a>
+          </div>
+          <div class="col-1">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/plc.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Automatyka:</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Sterowniki PLC, sensory, siłowniki, oraz wszystko, co potrzebne do automatyzacji procesów.
+              </p>
+            </a>
+            </div>
+          <div class="col-1">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/idea.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Oświetlenie</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Energooszczędne źródła światła, lampy przemysłowe, systemy oświetleniowe.
+              </p>
+            </a>
+          </div>
+          <div class="col-1">
+            <a class="produkt-anchor" href="elektronika.html">
+              <img class="elektronika" src="produkty/electric-gauge.png">
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <h3>Narzędzia Elektryczne</h3>
+            </a>
+            <a class="produkt-anchor" href="elektronika.html">
+              <p>
+                Zaciskarki, szczypce, wkrętarki i wiele innych narzędzi do pracy w elektryce.
+              </p>
+            </a>
+          </div>
+        </section>
+      </section>
+      </article>
+<article class="niebieski">
+    <article class="boutus">
+        <section id="temat2" class="about-us">
+          <div class="o-nas">
+            <div class="electric-bolt">
+              <img class="bolt" src="img/icons8-bolt.png" />
+              <h1>O nas</h1>
+            </div>
+            <p>
+              Jesteśmy liderem w dostarczaniu wysokiej jakości produktów z zakresu
+              elektryki i automatyki dla profesjonalistów oraz pasjonatów branży.
+              Nasza firma powstała z pasji do technologii, innowacji i
+              elektrycznych rozwiązań. Dlatego oferujemy szeroki asortyment
+              produktów, które pomogą Ci w każdym projekcie i spełnią najwyższe
+              standardy jakości.
+            </p>
+          </div>
+        </section>
+      </article>
+
+    <article>
+      <section id="temat4">
+        <section class="wspolnas">
+          <div class="electric-bolt ">
+            <img class="bolt" src="img/icons8-bolt.png" />
+            <h1>Współpraca</h1>
+          </div>
+      
+      <section class="essa">
+        <section>
+          <p>
+          Dzięki wieloletniemu doświadczeniu i partnerskim relacjom z wiodącymi producentami branży elektrycznej i automatyki, jesteśmy pewni, że spełnimy Twoje oczekiwania. Niezależnie od tego, czy prowadzisz firmę elektryczną, czy jesteś hobbystą, nasz sklep jest idealnym miejscem, aby znaleźć wszystko, czego potrzebujesz. Współpracujemy z takimi firmami jak:
+          </p>
+          </section>
+        </section>  
+      </section>
+      <section class="coop-companies">
+        <div class="coop-companies-slider">
+          
+          <div class="company">
+          <a href="https://www.se.com/pl/pl/">
+            <img src="wspolprace/schneider.png" alt="schneider" />
+          </a>
+        </div>
+        <div class="company">
+          <a href="https://cimco.pl/">
+          <img src="wspolprace/cimco.png" alt="cimco" />
+        </a>
+      </div>
+      <div class="company">
+        <a href="https://www.knipex.com/">
+          <img src="wspolprace/Knipex.png" alt="knipex" />
+        </a>
+      </div>
+      <div class="company">
+        <a href="https://hoegert.com/">
+          <img src="wspolprace/hoegert.webp" alt="hoegert" />
+        </a>
+      </div>
+      <div class="company">
+        <a href="http://www.gph.pl/">
+          <img src="wspolprace/gph.png" alt="gph" />
+        </a>
+      </div>
+      <div class="company">
+        <a href="https://www-de.wera.de/pl/">
+          <img src="wspolprace/wera.png" alt="wera" />
+        </a>
+      </div>
+      <div class="company">
+        <a href="https://www.siemens.com/pl/pl.html">
+          <img src="wspolprace/Siemens.png" alt="Siemens" />
+        </a>
+      </div>
+      <div class="company">
+        <a href="https://www.wago.com/pl/">
+          <img src="wspolprace/wago.webp" alt="Wago" />
+        </a>
+      </div>  
+      <div class="company">
+        <a href="https://www.eaton.com/pl/pl-pl.html">
+          <img src="wspolprace/eaton.png" alt="Eaton" />
+        </a>
+      </div>      
+    </div>
+    <div class="coop-companies-slider">
+          
+      <div class="company">
+      <a href="https://www.se.com/pl/pl/">
+        <img src="wspolprace/schneider.png" alt="schneider" />
+      </a>
+    </div>
+    <div class="company">
+      <a href="https://cimco.pl/">
+      <img src="wspolprace/cimco.png" alt="cimco" />
+    </a>
+  </div>
+  <div class="company">
+    <a href="https://www.knipex.com/">
+      <img src="wspolprace/Knipex.png" alt="knipex" />
+    </a>
+  </div>
+  <div class="company">
+    <a href="https://hoegert.com/">
+      <img src="wspolprace/hoegert.webp" alt="hoegert" />
+    </a>
+  </div>
+  <div class="company">
+    <a href="http://www.gph.pl/">
+      <img src="wspolprace/gph.png" alt="gph" />
+    </a>
+  </div>
+  <div class="company">
+    <a href="https://www-de.wera.de/pl/">
+      <img src="wspolprace/wera.png" alt="wera" />
+    </a>
+  </div>
+  <div class="company">
+    <a href="https://www.siemens.com/pl/pl.html">
+      <img src="wspolprace/Siemens.png" alt="Siemens" />
+    </a>
+  </div>
+  <div class="company">
+    <a href="https://www.wago.com/pl/">
+      <img src="wspolprace/wago.webp" alt="Wago" />
+    </a>
+  </div>
+  <div class="company">
+    <a href="https://www.eaton.com/pl/pl-pl.html">
+      <img src="wspolprace/eaton.png" alt="Eaton" />
+    </a>
+  </div>
+</div>
+<div class="coop-companies-slider">
+          
+  <div class="company">
+  <a href="https://www.se.com/pl/pl/">
+    <img src="wspolprace/schneider.png" alt="schneider" />
+  </a>
+</div>
+<div class="company">
+  <a href="https://cimco.pl/">
+  <img src="wspolprace/cimco.png" alt="cimco" />
+</a>
+</div>
+<div class="company">
+<a href="https://www.knipex.com/">
+  <img src="wspolprace/Knipex.png" alt="knipex" />
+</a>
+</div>
+<div class="company">
+<a href="https://hoegert.com/">
+  <img src="wspolprace/hoegert.webp" alt="hoegert" />
+</a>
+</div>
+<div class="company">
+<a href="http://www.gph.pl/">
+  <img src="wspolprace/gph.png" alt="gph" />
+</a>
+</div>
+<div class="company">
+<a href="https://www-de.wera.de/pl/">
+  <img src="wspolprace/wera.png" alt="wera" />
+</a>
+</div>
+<div class="company">
+<a href="https://www.siemens.com/pl/pl.html">
+  <img src="wspolprace/Siemens.png" alt="Siemens" />
+</a>
+</div>
+<div class="company">
+<a href="https://www.wago.com/pl/">
+  <img src="wspolprace/wago.webp" alt="Wago" />
+</a>
+</div>
+<div class="company">
+<a href="https://www.eaton.com/pl/pl-pl.html">
+  <img src="wspolprace/eaton.png" alt="Eaton" />
+</a>
+</div>
+</div>
+  
+  </section>
+  </section>
+</article>
+</article>
+
+<article>
+  <section id="temat5">
+    <div class="wspolnas">
+    <div class="electric-bolt ">
+      <img class="bolt" src="img/icons8-bolt.png" />
+      <h1>Kontakt</h1>
+    </div>
+  </section> 
+  <section class="produkty-kontakt">
+    <div class="row">
+      <div class="col-3">
+        <h3>Telefon</h3>
+          <p class="phone1">
+            <img class="telefon" src="kontakt/call-outline.svg"> Mariusz: &nbsp <a class="pahołni" href="tel:+48795650690"> +48 795 650 690</a>
+          </p>
+          <p class="phone1 encepence">
+            <img class="telefon" src="kontakt/call-outline.svg"> Andrzej: &nbsp <a class="pahołni" href="tel:+48797510404"> +48  797 510 404</a>
+          </p>
+      </div>
+      <div class="col-3">
+        <h3>E-mail</h3>
+        <p class="phone">
+         <img class="mail" src="kontakt/mail-outline.svg"> biuro@emi-tech.pl
+        </p>
+      </div>
+      <div class="col-3">
+        <h3>Adres</h3>
+        <p class="phoneloo">
+          <img class="home" src="kontakt/home-outline.svg">
+          Bytomska 3/6 <br/>
+          70-603 Szczecin
+        </p>
+      </div>
+    </div>
+  </section>
+  </article>
+  <section class="mapa contact-grid-3">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.8728120940777!2d14.56972657625139!3d53.41710076942772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa09a1b10cc247%3A0x9e12643442014b9!2sP.H.U.%20EMI-TECH!5e0!3m2!1spl!2spl!4v1708274989136!5m2!1spl!2spl" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </section>
+
+<footer>
+  <div>
+    <ul>
+      <li>
+        <a href="index.html">Strona główna</a>
+      </li>
+      <li>
+        <a href="services.html">Polityka prywatności</a>
+      </li>
+      <li>
+        <a href="products.html">Warunki użytkowania</a>
+      </li>
+      <li>
+        <a href="terms.html">Polityka cookies</a>
+      </li>
+   
+    </ul>
+  </div>
+  <div class="copyright">
+    <p>EMI-TECH © 2024<br />Site by ELCIT</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
