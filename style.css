@@ -276,11 +276,16 @@
 
 @media screen and (max-width: 1000px) {
   .text-box h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .text-box h2 {
-    font-size: 19px;
+    font-size: 15px;
+  }
+
+  .text-box {
+    text-align: center;
+    left: 50%;
   }
 }
 
@@ -506,6 +511,9 @@ h3 {
   padding: 20px;
 }
 
+.essaojeden {
+}
+
 @keyframes slider {
   from {
     transform: translateX(0);
@@ -523,6 +531,9 @@ h3 {
 
 /* -------KONTAKT------ */
 
+.siwy {
+  background-color: #d3d3d38b;
+}
 .produkty-kontakt {
   width: 90%;
   margin: auto;
@@ -623,6 +634,18 @@ h3 {
   background-color: #bbd540; /* Kolor linii */
 }
 
+.btn-down {
+  display: inline-block;
+  text-decoration: none;
+  color: #495057;
+  background-color: #bbd540;
+  font-size: 18px;
+  padding: 12px 34px;
+  margin-left: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
 .mapa {
   width: 95%;
   margin: auto;
@@ -639,6 +662,16 @@ h3 {
     flex-direction: column;
     gap: 15px;
   }
+}
+
+.coop-companies:before,
+.coop-companies:after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
+  z-index: 2;
 }
 
 @media screen and (max-width: 600px) {
