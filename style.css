@@ -657,10 +657,22 @@ h3 {
   width: 95%;
 }
 
+.wspolnas1 {
+  margin: auto;
+  width: 70%;
+  padding-top: 65px;
+}
+
 @media screen and (max-width: 1400px) {
   .row {
     flex-direction: column;
     gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wspolnas1 {
+    width: 90%;
   }
 }
 
